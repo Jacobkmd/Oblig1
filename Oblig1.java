@@ -44,11 +44,7 @@ public class oblig1 {
             bytt(a,k,i);
         }
 
-        for (int i : a) {
-            System.out.print(" " + i);
-        }
-
-        System.out.println();
+       
 
         return a;
     }
@@ -92,7 +88,6 @@ public class oblig1 {
 
         }
 
-        System.out.print(ombyttinger);
         return ombyttinger;
 
     }
@@ -123,7 +118,6 @@ public class oblig1 {
             }
         }
 
-        System.out.print(differentValues);
         return differentValues;
 
     }
@@ -163,8 +157,6 @@ public class oblig1 {
         for (int i = 0; i< a.length; ++i){
             System.out.print(a[i] + " ");
         }
-        System.out.println();
-        System.out.print(differentValues);
         return differentValues;
     }
 
@@ -217,9 +209,7 @@ public class oblig1 {
             }
         }
 
-        for (int i = 0; i < a.length; i++){
-            System.out.print(a[i] + " ");
-        }
+        
     }
 
     //Oppgave 5
@@ -245,35 +235,14 @@ public class oblig1 {
             a[0] = lastValue;
         }
 
-        for (int i = 0; i < a.length; ++i){
-            System.out.print(a[i] + " ");
-        }
+       
 
     }
 
 
     //Oppgave 7
-
-   /* public static void main(String[] args) {
-
-        String a = flett("ABC", "DEFGH");
-        String b = flett("IJKLMN", "OPQ");
-        String c = flett("", "AB");
-
-    }
-
-    public static String flett (String s, String t){
-
-        String result = "";
-
-        for (int i = 0; i < s.length()|| i < t.length(); i++){
-
-            if (i < s.length()){
-
-            }
-        }
-
-    }
     
-    */
+    // fikk ikke til denne oppgaven
+
+  
 }
