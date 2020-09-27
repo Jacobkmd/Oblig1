@@ -244,17 +244,12 @@ public class oblig1 {
 
     //Oppgave 5
 
-
-
-        //char[] a = {'A', 'B', 'C', 'D', 'E', 'F', 'G','H', 'I', 'J'};
-
-        //rotasjon(a);
-
-
-
     public static void rotasjon(char[] a) {
+         if (a.length == 0) {
+            return;
+        }
 
-        int n = 3;
+        int n = 1;
 
         for (int i = 0; i < n; ++i){
             char lastValue = a[a.length - 1];
