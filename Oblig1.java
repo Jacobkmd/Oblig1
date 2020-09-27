@@ -130,11 +130,13 @@ public class oblig1 {
 
     public static int antallUlikeUsortert(int[] a) {
 
-        int temp;
         int differentValues = 0;
 
-        if (a.length > 1) {
+        if (a.length < 1) {
+            return 0;}
+        else{
             differentValues = 1;
+            
 
             for (int i = 0; i < a.length; ++i) {
                 for (int j = i + 1; j < a.length; ++j) {
