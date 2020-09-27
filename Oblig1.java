@@ -217,10 +217,10 @@ public class oblig1 {
         int right = a.length - 1;
 
         while (left < right) {
-            while ((a[left] % 2 == 1 && left < right)) {
+            while ((a[left] % 2 == 1 && left < right) || a[left] == -1) {
                 left++;
             }
-            while (a[right] % 2 == 0 && left < right) {
+            while (a[right] % 2 == 0 && left < right && a[left] != -1) {
                 right--;
             }
             if (left < right) {
