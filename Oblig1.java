@@ -209,6 +209,10 @@ public class oblig1 {
 
   public static void delsortering(int[] a) {
 
+        if (a.length < 1) {
+            return;
+        }
+      
         int left = 0;
         int right = a.length - 1;
 
