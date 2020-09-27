@@ -10,12 +10,6 @@ public class oblig1 {
 
     //Oppgave 1
 
-        //int [] a = {1,4,2,3,5,6};
-        //int [] a = {};
-
-
-        //FinnStørste(a);
-
         //Her viser jeg hvor mange ombyttinger det blir på en random liste og hvordan listen ser ut.
         //ombyttinger(randPerm(12));
 
@@ -49,7 +43,7 @@ public class oblig1 {
         return a;
     }
 
-    static int FinnStørste(int[] a) {
+  static int maks(int[] a) {
         if (a.length < 1) {
             throw new NoSuchElementException("Tabellen er tom.");
         }
@@ -60,12 +54,12 @@ public class oblig1 {
         for (int i = begin; i < end; ++i) {
             if (a[i] > a[i + 1]) {
                 int temp = a[i];
-                a[i] = a[i+1];
-                a[i+1] = temp;
+                a[i] = a[i + 1];
+                a[i + 1] = temp;
             }
 
         }
-        int max = a[a.length-1];
+        int max = a[a.length - 1];
         return max;
 
     }
