@@ -161,9 +161,43 @@ public class oblig1 {
     //Oppgave 4
 
 
-        //int[] a ={6,10,9,4,1,3,8,5,2,7};
+      public static void kvikkSortering(int[] a, int begin, int end) {
 
-        //delSortering(a);
+        if (a == null || a.length == 0) {
+            return;
+        }
+
+        if (begin >= end) {
+            return;
+        }
+        int middle = begin + (end - begin) / 2;
+        int pivot = a[middle];
+
+        int i = begin, j = end;
+        while (i <= j) {
+
+            while (a[i] < pivot) {
+                i++;
+            }
+
+            while (a[j] > pivot) {
+                j--;
+            }
+
+            if (i <= j) {
+                bytte(a, i, j);
+                i++;
+                j--;
+            }
+        }
+
+        if (begin < j) {
+            kvikkSortering(a, begin, j);
+        }
+        if (end > i) {
+            kvikkSortering(a, i, end);
+        }
+    }
 
 
 
