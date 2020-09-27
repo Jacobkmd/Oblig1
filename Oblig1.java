@@ -90,11 +90,6 @@ public class oblig1 {
 
     //Oppgave 2
 
-
-        //int [] a = {2,1,4,6,5,8};
-      //  antallUlikeSortert(a);
-
-
     public static int antallUlikeSortert(int[] a){
 
         int differentValues = 0;
@@ -120,13 +115,6 @@ public class oblig1 {
     }
 
     //Oppgave 3
-
-
-
-    //int[] a = {4,5,2,1,11,9,5,32};
-       // antallUlikeUsortert(a);
-
-
 
     public static int antallUlikeUsortert(int[] a) {
 
