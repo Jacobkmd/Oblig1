@@ -198,6 +198,12 @@ public class oblig1 {
             kvikkSortering(a, i, end);
         }
     }
+    
+    public static void bytte(int array[], int x, int y) {
+        int temp = array[x];
+        array[x] = array[y];
+        array[y] = temp;
+    }
 
 
 
