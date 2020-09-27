@@ -138,25 +138,18 @@ public class oblig1 {
             differentValues = 1;
             
 
-            for (int i = 0; i < a.length; ++i) {
-                for (int j = i + 1; j < a.length; ++j) {
-                    if (a[i] > a[j]) {
-                        temp = a[i];
-                        a[i] = a[j];
-                        a[j] = temp;
-                    }
-                }
-            }
-            for (int k = 0; k < a.length - 1; ++k){
-                if (a[k] != a[k + 1]){
+           for (int i = 1; i < a.length; i++) {
+                int j = 0;
+                for (j = 0; j < i; j++)
+                    if (a[i] == a[j])
+                        break;
+
+
+                if (i == j)
                     differentValues++;
-                }
             }
+            return differentValues;
         }
-        for (int i = 0; i< a.length; ++i){
-            System.out.print(a[i] + " ");
-        }
-        return differentValues;
     }
 
 
