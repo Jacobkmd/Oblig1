@@ -207,17 +207,17 @@ public class oblig1 {
 
 
 
-    public static void delSortering(int[] a){
+  public static void delsortering(int[] a) {
 
         int left = 0;
         int right = a.length - 1;
 
-        while (left < right){
-            while (a[left] % 2 == 1 && left < right) {
+        while (left < right) {
+            while ((a[left] % 2 == 1 && left < right)) {
                 left++;
             }
-            while (a[right] % 2 == 0 && left < right){
-                right --;
+            while (a[right] % 2 == 0 && left < right) {
+                right--;
             }
             if (left < right) {
                 int temp = a[left];
@@ -227,27 +227,16 @@ public class oblig1 {
                 right--;
             }
         }
-        for (int i = 0; i < right; ++i) {
-            for (int j = i + 1; j <= right; ++j) {
-                if (a[i] > a[j]) {
-                    int temp = a[i];
-                    a[i] = a[j];
-                    a[j] = temp;
-                }
-            }
+        if (a[left] % 2 == 0) {
+            kvikkSortering(a, 0, left - 1);
+            kvikkSortering(a, left, a.length-1 );
         }
-        for (int i = right + 1; i < a.length - 1; ++i) {
-            for (int j = i + 1; j < a.length; ++j) {
-                if (a[i] > a[j]) {
-                    int temp = a[i];
-                    a[i] = a[j];
-                    a[j] = temp;
-                }
-            }
+        else {
+            kvikkSortering(a, 0, left);
+            kvikkSortering(a, left + 1, a.length-1 );
         }
-
-        
     }
+
 
     //Oppgave 5
 
