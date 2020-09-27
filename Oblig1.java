@@ -99,7 +99,10 @@ public class oblig1 {
 
         int differentValues = 0;
 
-        if (a.length > 1) {
+        if (a.length < 1) {
+            return 0;
+        } 
+        else {
             differentValues = 1;
 
             for (int i = 0; i < a.length - 1; ++i){
