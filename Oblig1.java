@@ -263,6 +263,30 @@ public class oblig1 {
 
         return b.toString();
     }
+    
+    //7B
+     public static String flett(String... s) {
+         
+        StringBuilder b = new StringBuilder();
+         
+        int longest = 0;
+        int length = s[0].length();
+        for(int i=1; i< s.length; i++) {
+            if(s[i].length() > length) {
+                longest = i; length = s[i].length();
+            }
+        }
+
+        for (int i = 0; i < s[longest].length(); i++) {
+            for (int j = 0; j < s.length; j++) {
+                if (s[j].length() > i) {
+                    b.append(s[j].charAt(i));
+                }
+            }
+        }
+        return b.toString();
+    }
+
 
 
   
