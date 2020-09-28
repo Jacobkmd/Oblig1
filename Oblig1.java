@@ -267,6 +267,11 @@ public class oblig1 {
     //7B
      public static String flett(String... s) {
          
+          String empty = "";
+        if (s.length == 0) {
+            return empty;
+        }
+         
         StringBuilder b = new StringBuilder();
          
         int longest = 0;
@@ -288,6 +293,4 @@ public class oblig1 {
     }
 
 
-
-  
 }
