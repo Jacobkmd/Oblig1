@@ -6,8 +6,6 @@ import java.util.Random;
 
 public class oblig1 {
 
-
-
     //Oppgave 1
 
         //Her viser jeg hvor mange ombyttinger det blir på en random liste og hvordan listen ser ut.
@@ -37,8 +35,6 @@ public class oblig1 {
             int i = r.nextInt(k+1);
             bytt(a,k,i);
         }
-
-       
 
         return a;
     }
@@ -85,7 +81,6 @@ public class oblig1 {
         return ombyttinger;
 
     }
-
 
 
     //Oppgave 2
@@ -243,10 +238,7 @@ public class oblig1 {
             a[0] = lastValue;
         }
 
-       
-
     }
-
 
     //Oppgave 7
     
