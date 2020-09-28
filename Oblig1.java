@@ -250,7 +250,20 @@ public class oblig1 {
 
     //Oppgave 7
     
-    // fikk ikke til denne oppgaven
+   //7A
+     public static String flett(String s, String t) {
+        int k = Math.min(s.length(), t.length());
+        StringBuilder b = new StringBuilder();
+
+        for (int i = 0; i < k; i++) {
+            b.append(s.charAt(i)).append(t.charAt(i));
+        }
+
+        b.append(s.substring(k)).append(t.substring(k));
+
+        return b.toString();
+    }
+
 
   
 }
